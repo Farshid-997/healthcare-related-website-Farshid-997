@@ -3,7 +3,7 @@ import './Appoinment.css'
 const Appoinment = () => {
     return (
         <div>
-            <h1>Appoinment!!</h1>
+            <h1 class="text-warning mb-5">Appoinment!!</h1>
             <div className="form">
                 <form>
                     <label for="fname">First Name</label>

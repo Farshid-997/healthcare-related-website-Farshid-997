@@ -10,12 +10,17 @@ import Contact from './Components/Contact/Contact';
 import NotFound from './Components/NotFound/NotFound';
 import AboutUs from './Components/AboutUs/AboutUs';
 import Footer from './Components/Footer/Footer';
+import Login from './Components/Login/Login';
+import Register from './Components/Register/Register';
+import Header from './Components/Header/Header';
+
 function App() {
   return (
     <div className="App">
 
 
       <Router>
+        <Header></Header>
         <Switch>
           <Route exact path="/">
 
@@ -49,6 +54,15 @@ function App() {
 
           <Route path="/contact">
             <Contact></Contact>
+          </Route>
+
+
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+
+          <Route path="/register">
+            <Register></Register>
           </Route>
 
           <Route path="*">
