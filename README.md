@@ -8,3 +8,4 @@
 6. and we use react bootstrap.
 7. we have also a register button 
 8. and we use context api also
+9. we also showed user when they logged in
