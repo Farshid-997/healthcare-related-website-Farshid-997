@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Card.css'
 
 const Cards = (props) => {
-    const { name, image, description } = props.service
+    const { key, name, image, description } = props.service
     return (
         <div>
 
@@ -12,7 +12,7 @@ const Cards = (props) => {
                 <h3>{name}</h3>
 
                 <p className="px-3">{description}</p>
-                <Link to="">
+                <Link to={`/bookingservice/${key}`}>
                     <button className="btn btn-success"> {name.toLowerCase()}</button>
                 </Link>
             </div>

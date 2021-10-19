@@ -15,7 +15,7 @@ import Register from './Components/Register/Register';
 import Header from './Components/Header/Header';
 import AuthProvider from './Context/AuthProvider';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
-
+import BookingService from './Components/Booking/BookingService/BookingService';
 function App() {
   return (
     <div className="App">
@@ -38,10 +38,10 @@ function App() {
 
           </Route>
 
-          <Route path="/blog">
+          <PrivateRoute path="/blog">
 
             <Blog></Blog>
-          </Route>
+          </PrivateRoute>
 
           <PrivateRoute path="/appoinment">
 
@@ -64,6 +64,10 @@ function App() {
 
           <Route path="/register">
             <Register></Register>
+          </Route>
+
+          <Route path="/bookingservice/:serviceKey">
+            <BookingService></BookingService>
           </Route>
 
           <Route path="*">
