@@ -66,9 +66,9 @@ function App() {
             <Register></Register>
           </Route>
 
-          <Route path="/bookingservice/:serviceKey">
+          <PrivateRoute path="/bookingservice/:serviceKey">
             <BookingService></BookingService>
-          </Route>
+          </PrivateRoute>
 
           <Route path="*">
             <NotFound></NotFound>
