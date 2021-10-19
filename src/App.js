@@ -13,13 +13,13 @@ import Footer from './Components/Footer/Footer';
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import Header from './Components/Header/Header';
+import AuthProvider from './Context/AuthProvider';
 
 function App() {
   return (
     <div className="App">
 
-
-      <Router>
+      <AuthProvider> <Router>
         <Header></Header>
         <Switch>
           <Route exact path="/">
@@ -71,7 +71,9 @@ function App() {
         </Switch>
 
       </Router>
-      <Footer></Footer>
+        <Footer></Footer>
+      </AuthProvider>
+
     </div>
   );
 }
