@@ -1,4 +1,4 @@
-# Getting Started with Dental Care react App ,Demo: https://goofy-kalam-501d3b.netlify.app/home
+# Getting Started with Dental Care react App ,Demo: https://goofy-kalam-501d3b.netlify.app/
 
 1. Made a react app and it is dental care app
 2. In this app we can book doctor with our preferable  time 
