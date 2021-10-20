@@ -13,7 +13,7 @@ const AboutUs = () => {
                     <img src={img1} className="card-img-top" alt="..."></img>
                     <div className="card-body">
                         <h5 className="card-title">Our Best Surgeons</h5>
-                        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p className="card-text">We have the best surgeon in our medical and if you want these service try to contact with us you will get the excellent services from they are the best surgeons from every department.</p>
 
                     </div>
                 </div>
@@ -21,7 +21,7 @@ const AboutUs = () => {
                     <img src={img2} class="card-img-top" alt="..."></img>
                     <div className="card-body">
                         <h5 className="card-title">Our Nurses</h5>
-                        <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <p className="card-text">Without them our patient wont get proper treatment so we are gratefull from them.</p>
 
                     </div>
                 </div>
@@ -29,7 +29,7 @@ const AboutUs = () => {
                     <img src={img3} className="card-img-top" alt="..."></img>
                     <div className="card-body">
                         <h5 className="card-title">Our Medical Staff</h5>
-                        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        <p className="card-text">our medical staffs are also responsible for provind you a good treatment so we are also grateful for them.</p>
 
                     </div>
                 </div>
