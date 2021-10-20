@@ -8,7 +8,7 @@ const Booking = () => {
     const [bookings, setBooking] = useState([])
     useEffect(() => {
 
-        fetch('/fakedata.JSON')
+        fetch('/fakedata.json')
             .then(res => res.json())
             .then(data => setBooking(data))
 
