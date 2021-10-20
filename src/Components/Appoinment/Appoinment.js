@@ -3,23 +3,23 @@ import './Appoinment.css'
 const Appoinment = () => {
     return (
         <div>
-            <h1 class="text-warning mb-5">Appoinment!!</h1>
-            <div className="form">
-                <form>
-                    <label for="fname">First Name</label>
+            <h1 className="text-warning mb-5">Appoinment!!</h1>
+            <div className="htmlForm">
+                <htmlForm>
+                    <label htmlFor="fname">First Name</label>
                     <input type="text" id="fname" name="firstname" placeholder="Your name.."></input>
 
-                    <label for="lname">Last Name</label>
+                    <label htmlFor="lname">Last Name</label>
                     <input type="text" id="lname" name="lastname" placeholder="Your last name.."></input>
 
-                    <label for="lname">Email</label>
+                    <label htmlFor="lname">Email</label>
                     <input type="text" id="email" name="email" placeholder="Your Email.."></input>
 
-                    <label for="lname">Time:</label>
+                    <label htmlFor="lname">Time:</label>
                     <input type="date" id="time" name="time" placeholder="Your time.."></input> <br />
 
 
-                    <label for="doctor">Doctor</label>
+                    <label htmlFor="doctor">Doctor</label>
                     <select id="doctor" name="doctor">
                         <option value="australia">John</option>
                         <option value="canada">Michael</option>
@@ -27,7 +27,7 @@ const Appoinment = () => {
                     </select>
 
                     <input type="submit" value="Submit"></input>
-                </form>
+                </htmlForm>
             </div>
 
 

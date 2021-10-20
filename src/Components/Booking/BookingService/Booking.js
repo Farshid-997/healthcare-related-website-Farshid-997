@@ -1,38 +1,40 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Button } from 'react-bootstrap';
-import { useParams } from 'react-router';
 
-const BookingService = () => {
+import { useParams } from 'react-router';
+import './booking.css'
+const Booking = () => {
     const { serviceKey } = useParams();
     const [bookings, setBooking] = useState([])
     useEffect(() => {
 
-        fetch('./fakedata.json')
+        fetch('/fakedata.JSON')
             .then(res => res.json())
             .then(data => setBooking(data))
+
+
     }, [])
 
+    const bookingInfo = bookings.find(booking => booking.key === parseInt(serviceKey))
 
-    const bookingInfo = bookings.filter(booking => booking.key === serviceKey)
+    // console.log(bookingInfo)
+
 
     return (
-        <div>
-            <h1>This is booking:{serviceKey}</h1>
-
+        <div className="booking">
             <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={bookingInfo.image} />
+                <Card.Img variant="top" src={bookingInfo?.image} />
                 <Card.Body>
-                    <Card.Title>{bookingInfo[0]?.name}</Card.Title>
+                    <Card.Title>{bookingInfo?.name}</Card.Title>
                     <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
+                        {bookingInfo?.description}
                     </Card.Text>
                     <Button variant="primary">Go somewhere</Button>
                 </Card.Body>
             </Card>
-
         </div>
     );
+
 };
 
-export default BookingService;
+export default Booking;

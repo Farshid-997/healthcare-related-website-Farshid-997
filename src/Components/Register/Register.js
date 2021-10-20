@@ -11,8 +11,8 @@ const Register = () => {
             setError('password must be 6 character');
             return;
         }
-        if (!/^(?=.*\d)(?=(.*\W){2})(?=.*[a-zA-Z])(?!.*\s).{1,15}$/.test(password)) {
-            setError('PassWord Inncorrect');
+        if (!/^.*(?=.{6,})(?=.*[a-zA-Z])(?=.*\d)(?=.*[!#$%&? "]).*$/.test(password)) {
+            setError('PassWord need 6 character long and a letter a digit and a special character');
             return;
         }
         createUserWithEmailAndPassword(auth, email, password)
@@ -39,13 +39,13 @@ const Register = () => {
             <Form onSubmit={handleReg}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
-                    <Form.Control onBlur={handleEmailChange} type="email" placeholder="Enter email" required />
+                    <Form.Control size="sm" onBlur={handleEmailChange} type="email" placeholder="Enter email" required />
 
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label>Password</Form.Label>
-                    <Form.Control onBlur={handlePasswordChange} type="password" placeholder="Password" required />
+                    <Form.Control size="sm" onBlur={handlePasswordChange} type="password" placeholder="Password" required />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Check me out" />
@@ -54,7 +54,7 @@ const Register = () => {
                 <Form.Text className="text-danger ">
                     {error}
                 </Form.Text> <br />
-                <Button variant="primary" type="submit">
+                <Button size="sm" variant="primary" type="submit">
                     Submit
                 </Button>
             </Form>
