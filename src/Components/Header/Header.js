@@ -9,7 +9,7 @@ const Header = () => {
     const { user, logOut } = useAuth()
     return (
         <div className="header">
-            <nav>
+            <nav className="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm p-3">
                 <NavLink to="/home">Home</NavLink>
                 <NavLink to="/services">Services</NavLink>
                 <NavLink to="/aboutus">About Us</NavLink>

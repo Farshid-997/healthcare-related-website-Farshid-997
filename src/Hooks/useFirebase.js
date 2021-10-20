@@ -29,7 +29,7 @@ const useFirebase = () => {
 
         onAuthStateChanged(auth, user => {
             if (user) {
-                console.log(user)
+
                 setUser(user)
             }
         })
