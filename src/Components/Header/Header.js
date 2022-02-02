@@ -13,11 +13,11 @@ const Header = () => {
                 <NavLink to="/home">Home</NavLink>
                 <NavLink to="/services">Services</NavLink>
                 <NavLink to="/aboutus">About Us</NavLink>
-                <NavLink to="/blog">Blog</NavLink>
+              
                 <NavLink to="/appoinment">Book Appoinment</NavLink>
                 <NavLink to="/contact">Contact</NavLink>
                 <NavLink to="/register">Register</NavLink>
-                <NavLink to="/login">Login</NavLink>
+               
                 {user.email && <span style={{ color: 'orange', fontWeight: 'bold' }}>Hello!!{user.displayName}</span>}
                 {
                     user?.email && <Button onClick={logOut} variant="primary">LogOut</Button>

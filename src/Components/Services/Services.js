@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Container, Row } from 'react-bootstrap';
 import Cards from '../Card/Cards';
 import './service.css'
 const Services = () => {
@@ -15,9 +16,9 @@ const Services = () => {
 
 
     return (
-        <div >
+        <Container>
             <h2 className="text-primary mt-5">This is Our Services</h2>
-            <div className="service-container">
+            <Row xs={1} sm={1} md={2} lg={3} className="g-4" style={{marginLeft:'5px',paddingLeft:'5px'}}>
                 {
                     services.map(service => <Cards
 
@@ -27,9 +28,9 @@ const Services = () => {
 
                     </Cards>)
                 }
-            </div>
+            </Row>
 
-        </div>
+        </Container>
     );
 };
 
