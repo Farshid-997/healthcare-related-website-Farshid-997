@@ -25,7 +25,7 @@ const data = [
     {
         key: 4,
         name: '24 hour Doctor Service',
-        image: 'https://namaydentistry.com/wp-content/uploads/2019/08/oral_cancer_screening-400x250.jpg',
+        image: 'https://ibb.co/0KLN7C7',
         description: 'We have 24 hour doctor  service and where you can contact with them easily at any time',
     },
 

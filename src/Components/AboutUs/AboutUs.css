@@ -3,3 +3,52 @@
     background-repeat: no-repeat;
     margin:15px;
 } */
+
+.aboutCard {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+.imagec {
+  height: 500px;
+  width: 500px;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  object-fit: contain;
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-text {
+  overflow: hidden;
+  margin-left: 5px;
+  margin-right: 10px;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.card-title {
+  color: #5d6d7c;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.card-title:hover {
+  color: #172340;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.txt-succ {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.txt-succ:hover {
+  font-weight: bolder;
+  font-size: 2rem;
+  transform: perspective(360px) rotateY(90deg);
+  transition: transform 1s ease 0s;
+  color: rgba(135, 92, 206, 0.863);
+}

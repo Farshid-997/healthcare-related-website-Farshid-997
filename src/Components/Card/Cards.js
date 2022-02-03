@@ -18,18 +18,18 @@ const Cards = (props) => {
                 </Link>
             </div> */}
 
-<Card style={{ width: '18rem', borderRadius:'10px',boxShadow:'3px 3px 2px blue' }}>
-    <Ratio aspectRatio="16x9">
-    <Card.Img variant="top" src={image} />
-    </Ratio>
+<Card  className="text-center border-0  p-2 hCard box-shadow-3d">
+  
+    <Card.Img variant="top" src={image} className='img-fluid cardpic px-5' />
+   
  
   <Card.Body>
     <Card.Title>{name}</Card.Title>
     <Card.Text>
-     {description}
+     {description.slice(0,50)}...
     </Card.Text>
     <Link to={`/bookingservice/${key}`}>
-    <Button variant="primary">Book Now</Button>
+    <Button className='btnCard fw-bold' variant="success">Book Now</Button>
     </Link>
    
   </Card.Body>
