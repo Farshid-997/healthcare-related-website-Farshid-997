@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
+import './Register.css'
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 const Register = () => {
@@ -26,38 +26,36 @@ const Register = () => {
     const [password, setPassWord] = useState('')
     const [error, setError] = useState('')
     const auth = getAuth();
-    const handlePasswordChange = e => {
-        setPassWord(e.target.value)
-    }
-    const handleEmailChange = (e) => {
-        setEmail(e.target.value)
-    }
+    // const handlePasswordChange = e => {
+    //     setPassWord(e.target.value)
+    // }
+    // const handleEmailChange = (e) => {
+    //     setEmail(e.target.value)
+    // }
     return (
-        <div>
+        <div className="register">
             <h2><span className="text-warning"> Please</span> Register!!</h2>
 
-            <Form onSubmit={handleReg}>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control size="sm" onBlur={handleEmailChange} type="email" placeholder="Enter email" required />
-
-                </Form.Group>
-
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control size="sm" onBlur={handlePasswordChange} type="password" placeholder="Password" required />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
-
-                <Form.Text className="text-danger ">
-                    {error}
-                </Form.Text> <br />
-                <Button size="sm" variant="primary" type="submit">
-                    Submit
-                </Button>
-            </Form>
+            <form onSubmit={handleReg}>
+            
+            <input type="text" id="fname" name="firstname" placeholder="Your first name.."/>
+           
+           
+            <input type="text" id="lname"  name="lastname" placeholder="Your last name.."/>
+           
+           
+            
+            <input type="email" id="email"  name="email" placeholder=" Enter Your Email.."/>
+           
+            <input type="password" id="password"  name="password" placeholder="Enter Your Password..."></input>
+           
+           
+           
+           
+           
+            <input type="submit" value="Register"/>
+           
+                     </form>
 
             <Link to="/login">Already Registered?</Link>
         </div>

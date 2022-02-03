@@ -9,7 +9,7 @@ import Appoinment from './Components/Appoinment/Appoinment';
 import Contact from './Components/Contact/Contact';
 import NotFound from './Components/NotFound/NotFound';
 import AboutUs from './Components/AboutUs/AboutUs';
-import Footer from './Components/Footer/Footer';
+
 import Login from './Components/Login/Login';
 import Register from './Components/Register/Register';
 import Header from './Components/Header/Header';
@@ -76,7 +76,7 @@ function App() {
         </Switch>
 
       </Router>
-        <Footer></Footer>
+        
       </AuthProvider>
 
     </div>
