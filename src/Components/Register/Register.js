@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Form, Button } from 'react-bootstrap';
+
 import { Link } from 'react-router-dom';
 import './Register.css'
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
@@ -34,8 +34,8 @@ const Register = () => {
     // }
     return (
         <div className="register">
-            <h2><span className="text-warning"> Please</span> Register!!</h2>
-
+            <h2 style={{fontSize:'2rem',fontWeight:'bold'}}><span className="text-warning"> Please</span> Register!!</h2>
+            <hr className='w-50 mx-auto mb-2 mt-0' />
             <form onSubmit={handleReg}>
             
             <input type="text" id="fname" name="firstname" placeholder="Your first name.."/>
