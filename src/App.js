@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Services from './Components/Services/Services';
-import Blog from './Components/Blog/Blog';
+
 import Appoinment from './Components/Appoinment/Appoinment';
 import Contact from './Components/Contact/Contact';
 import NotFound from './Components/NotFound/NotFound';
@@ -38,10 +38,7 @@ function App() {
 
           </Route>
 
-          <PrivateRoute path="/blog">
-
-            <Blog></Blog>
-          </PrivateRoute>
+      
 
           <PrivateRoute path="/appoinment">
 

@@ -44,11 +44,12 @@
 .txt-succ {
   font-weight: bolder;
   font-size: 2rem;
+  box-shadow: rgba(5, 5, 5, 0.25) 0px 5px 15px -12px;
 }
 .txt-succ:hover {
   font-weight: bolder;
   font-size: 2rem;
-  transform: perspective(360px) rotateY(90deg);
+  transform: perspective(600px) rotateY(45deg);
   transition: transform 1s ease 0s;
   color: rgba(135, 92, 206, 0.863);
 }

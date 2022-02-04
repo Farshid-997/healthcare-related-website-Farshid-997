@@ -8,15 +8,7 @@ const Cards = (props) => {
     return (
         <div>
 
-            {/* <div className="service pb-5">
-                <img src={image} alt="" />
-                <h3>{name}</h3>
-
-                <p className="px-3">{description}</p>
-                <Link to={`/bookingservice/${key}`}>
-                    <button className="btn btn-success"> {name.toLowerCase()}</button>
-                </Link>
-            </div> */}
+         
 
 <Card  className="text-center border-0  p-2 hCard box-shadow-3d">
   
