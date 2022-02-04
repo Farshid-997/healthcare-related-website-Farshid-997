@@ -17,7 +17,8 @@ const Services = () => {
 
     return (
         <Container>
-            <h2 className="text-success textCard mt-5">This is Our Services</h2>
+            <h2 className="text-success textCard mt-5" style={{fontSize:'1.5rem',fontWeight:'bold'}}>This is Our Services</h2>
+            <hr className='w-50 mx-auto mb-2 mt-0' />
             <Row xs={1} sm={1} md={2} lg={3} className="g-4" style={{marginLeft:'5px',paddingLeft:'5px'}}>
                 {
                     services.map(service => <Cards

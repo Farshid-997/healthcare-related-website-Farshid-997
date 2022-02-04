@@ -6,8 +6,8 @@ import './AboutUs.css'
 const AboutUs = () => {
     return (
         <div className="about">
-            <h2 className="text-success txt-succ mt-5  mb-10">About Us</h2>
-           {/* < hr style={{border:'2px dashed gray',width:'20%',marginLeft:'800px',boxShadow:' rgba(5, 5, 5, 0.25) 0px 25px 50px -12px '}}/> */}
+            <h2 className=" txt-succ mt-5  mb-10">About Us</h2>
+            <hr className='w-50 mx-auto mb-2 mt-0' />
 
        <div className="aboutCard">
        <img src={img2} className="card-img-top imagec" alt="..."></img>

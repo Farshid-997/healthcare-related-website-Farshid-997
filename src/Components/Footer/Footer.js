@@ -1,41 +1,41 @@
 import React from 'react';
 import './footer.css';
+import img1 from './logo.jpg'
+import { FaFacebook,FaInstagramSquare,FaTwitterSquare } from "react-icons/fa";
+import { Col, Container, Row } from 'react-bootstrap';
 const Footer = () => {
     return (
         <div className="footer">
            
 
-            <div className="footer">
-                <div className="contain">
+           <Container fluid className='footer  ps-5'>
+            <Row className='mt-5 pt-5'>
+                {/*  footer img */}
+                <Col xs={12} md={4} className='social ps-5'>
+                    <img src={img1} alt="" height='150' width='150' />
+                </Col>
+                <Col xs={12} md={6}>
+                    <Row >
+                        {/* footer notes */}
+                        <Col xs={12} md={6} className='mb-5'>
+                            <p>About us</p>
+                            <p>Our Services</p>
+                            <p>Cell:+880412562652</p>
+                        </Col>
+                        <Col xs={12} md={6} className='d-flex flex-column align-items-center justify-content-center'>
+                            <p>Follow us at</p>
+                            <div className='d-flex justify-content-center mt-2'>
+                                <FaFacebook style={{width:'50px',height:'50px',color:'blue'}}/>
+                                <FaInstagramSquare style={{width:'50px',height:'50px',color:'red'}} />
+                                <FaTwitterSquare style={{width:'50px',height:'50px',color:'yellow'}} />
+                            </div>
+                        </Col>
+                    </Row>
+                </Col>
 
-                    <div className="col">
-                        <h1>Resources</h1>
-                        <ul>
-                            <li>About Us</li>
-                            <li>Contact With us</li>
-                            <li>Blog</li>
+            </Row>
 
-                        </ul>
-                    </div>
-                    <div className="col">
-                        <h1>Support</h1>
-                        <ul>
-                            <li>Contact us</li>
-                            <li>Web chat</li>
-                            <li>Appointment</li>
-                        </ul>
-                    </div>
-                    <div className="col social">
-                        <h1>Social</h1>
-                        <ul>
-                            <li><img src="https://svgshare.com/i/5fq.svg" alt='' width="32" style={{ width: '32px' }}></img></li>
-                            <li><img src="https://svgshare.com/i/5eA.svg" alt='' width="32" style={{ width: '32px' }}></img></li>
-                            <li><img src="https://svgshare.com/i/5f_.svg" alt='' width="32" style={{ width: '32px' }}></img></li>
-                        </ul>
-                    </div>
-                    <div className="clearfix"></div>
-                </div>
-            </div>
+        </Container>
         </div>
     );
 };

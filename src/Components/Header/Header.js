@@ -47,7 +47,7 @@ const Header = () => {
                         <NavLink to='/home'> <Nav.Link href="#home">Home</Nav.Link></NavLink>
                         <NavLink to='/aboutus'> <Nav.Link href="#about">About</Nav.Link></NavLink>
                         <NavLink to='/services'> <Nav.Link href="#services">Services</Nav.Link></NavLink>
-                        <NavLink to='/appointment'> <Nav.Link href="#appointment">Appointment</Nav.Link></NavLink>
+                      
                         <NavLink to='/contact'> <Nav.Link href="#contact">Contact</Nav.Link></NavLink>
                         {/* conditional rendering */}
                         {(user.displayName || user.email) &&

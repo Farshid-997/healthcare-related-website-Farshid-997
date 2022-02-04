@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Services from './Components/Services/Services';
 
-import Appoinment from './Components/Appoinment/Appoinment';
+
 import Contact from './Components/Contact/Contact';
 import NotFound from './Components/NotFound/NotFound';
 import AboutUs from './Components/AboutUs/AboutUs';
@@ -16,6 +16,7 @@ import Header from './Components/Header/Header';
 import AuthProvider from './Context/AuthProvider';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import Booking from './Components/Booking/BookingService/Booking';
+
 function App() {
   return (
     <div className="App">
@@ -40,10 +41,7 @@ function App() {
 
       
 
-          <PrivateRoute path="/appointment">
-
-            <Appoinment></Appoinment>
-          </PrivateRoute>
+        
 
           <Route path="/aboutus">
 
@@ -62,6 +60,8 @@ function App() {
           <Route path="/register">
             <Register></Register>
           </Route>
+
+        
 
           <PrivateRoute path="/bookingservice/:serviceKey">
             <Booking></Booking>
