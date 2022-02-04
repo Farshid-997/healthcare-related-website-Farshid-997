@@ -40,7 +40,7 @@ function App() {
 
       
 
-          <PrivateRoute path="/appoinment">
+          <PrivateRoute path="/appointment">
 
             <Appoinment></Appoinment>
           </PrivateRoute>
